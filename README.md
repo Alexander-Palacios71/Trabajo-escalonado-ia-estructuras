@@ -122,20 +122,11 @@ Indicadores:
 
 # Tecnologías
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Plotly
-- Scikit-Learn
-- SciPy
-- Jupyter Notebook
+- Visual Code
 
 Software de Ingeniería:
 
 - ETABS
-- OpenSees *(opcional)*
-- SAP2000 *(si aplica)*
 
 ---
 
