@@ -1,35 +1,38 @@
-# Trabajo-escalonado-ia-estructuras
-# 📊 Análisis de Registros Sísmicos de la Zona Sísmica 3 del Perú mediante Vertical Data Science
+# Selección y evaluación de registros sísmicos mediante Vertical Data Science
 
-## Descripción
+Este repositorio contiene el desarrollo de un proyecto de investigación orientado a la evaluación de registros sísmicos corregidos correspondientes a la **Zona Sísmica 3 del Perú**, utilizando técnicas de **Vertical Data Science** para su caracterización, análisis y selección con fines de aplicación en análisis no lineales tiempo-historia (Nonlinear Time History Analysis - NLTHA).
 
-Este proyecto tiene como objetivo analizar los registros de los sismos de mayor magnitud ocurridos en la **Zona Sísmica 3 del Perú**, empleando técnicas de **Vertical Data Science** para identificar patrones en el comportamiento sísmico y generar información útil para la ingeniería estructural.
+El objetivo principal es verificar que los registros acelerográficos cumplan con los criterios técnicos y normativos requeridos para su utilización en análisis dinámicos no lineales. Para ello, se analizarán sus características sísmicas y su compatibilidad espectral, permitiendo identificar aquellos registros que representen adecuadamente la amenaza sísmica de la zona de estudio.
 
-El propósito principal es transformar grandes volúmenes de datos sísmicos históricos en conocimiento que permita seleccionar registros representativos para su utilización en **análisis no lineales tiempo-historia (Nonlinear Time History Analysis - NLTHA)**.
+Una vez seleccionados los registros, estos serán aplicados al análisis no lineal tiempo-historia de una estructura, con el propósito de evaluar su respuesta sísmica mediante indicadores como derivas de entrepiso, desplazamientos y nivel de desempeño estructural de acuerdo con normas internacionales.
 
----
+El proyecto integra herramientas de Ciencia de Datos e Ingeniería Sísmica para desarrollar una metodología reproducible que facilite la selección de acelerogramas y contribuya a mejorar la confiabilidad de las evaluaciones estructurales.
 
-## Objetivos:
+## Fuente de datos
 
-- Analizar registros sísmicos históricos de la Zona Sísmica 3 del Perú.
-- Identificar patrones espaciales, temporales y estadísticos mediante técnicas de Vertical Data Science.
-- Caracterizar los eventos sísmicos según sus principales parámetros.
-- Facilitar la selección de acelerogramas representativos para análisis tiempo-historia.
+Los registros acelerográficos utilizados en este proyecto serán obtenidos del **Centro Peruano Japonés de Investigaciones Sísmicas y Mitigación de Desastres (CISMID)** mediante la Red Acelerográfica del CISMID (REDACIS):
 
----
+https://www.cismid.uni.edu.pe/ceois/redacis/red/
 
-## Problemática:
+En caso de ser necesario, la información podrá complementarse con registros oficiales publicados por el Instituto Geofísico del Perú (IGP).
 
-El Perú se encuentra dentro del Cinturón de Fuego del Pacífico y presenta una elevada actividad sísmica. Aunque instituciones como el IGP y CISMID cuentan con extensas bases de datos de eventos sísmicos, gran parte de esta información permanece subutilizada.
+## Estado del proyecto
 
-La selección de registros sísmicos para análisis no lineales suele realizarse mediante criterios limitados, sin aprovechar las relaciones existentes entre variables como:
+Actualmente el proyecto se encuentra en fase de desarrollo e incluye las siguientes actividades:
 
-- Magnitud (Mw).
-- Profundidad.
-- PGA.
-- Distancia epicentral.
-- Localización geográfica.
-- Distribución temporal.
-- Contenido frecuencial.
-- Duración del movimiento.
+- Recolección de registros sísmicos.
+- Caracterización y análisis mediante Vertical Data Science.
+- Evaluación de compatibilidad espectral.
+- Selección de registros para análisis no lineal tiempo-historia.
+- Evaluación del desempeño estructural.
 
+## Tecnologías
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- SciPy
+- Scikit-learn
+- Jupyter Notebook
+- ETABS / OpenSees (Análisis estructural)
