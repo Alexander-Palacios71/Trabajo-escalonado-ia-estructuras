@@ -9,7 +9,7 @@ El propósito principal es transformar grandes volúmenes de datos sísmicos his
 
 ---
 
-## Objetivos
+## Objetivos:
 
 - Analizar registros sísmicos históricos de la Zona Sísmica 3 del Perú.
 - Identificar patrones espaciales, temporales y estadísticos mediante técnicas de Vertical Data Science.
