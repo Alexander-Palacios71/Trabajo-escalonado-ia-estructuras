@@ -13,61 +13,193 @@ para análisis no lineales tiempo-historia de estructuras ubicadas en la Zona S�
 ## Docente
 Kurt Walter Soncco Sinchi — Julio, 2026
 
-## Descripción
-El Perú se ubica en el Cinturón de Fuego del Pacífico, con la Zona Sísmica 3 (Norma E.030) entre las
-regiones de mayor amenaza sísmica del país. Este proyecto aplica técnicas de **Vertical Data Science**
-para caracterizar y seleccionar registros sísmicos corregidos, evaluando su aptitud para análisis no
-lineales tiempo-historia y el desempeño sísmico de estructuras según criterios normativos internacionales.
+# Descripción
 
-## Fuente de datos
-- Centro Peruano Japonés de Investigaciones Sísmicas y Mitigación de Desastres (CISMID)
-- Instituto Geofísico del Perú (IGP), como complemento
+Este proyecto desarrolla una metodología basada en **Vertical Data Science (VDS)** para la caracterización, evaluación y selección de registros sísmicos corregidos correspondientes a la **Zona Sísmica 3 del Perú**, con el objetivo de verificar su aptitud para ser utilizados en **Análisis No Lineal Tiempo-Historia (Nonlinear Time History Analysis - NLTHA)**.
 
-## Variables
+Posteriormente, los registros seleccionados serán aplicados al análisis dinámico no lineal de una estructura para evaluar su desempeño sísmico mediante indicadores como:
 
-**Variable independiente:** Registros sísmicos corregidos evaluados mediante Vertical Data Science
-- Características del registro
-- Compatibilidad espectral
-- Magnitud del evento
-- Profundidad
+- Derivas máximas de entrepiso.
+- Desplazamientos máximos.
+- Cortante basal.
+- Nivel de desempeño estructural.
+- Estado de daño.
+
+La investigación integra herramientas de Ciencia de Datos con criterios de Ingeniería Sísmica establecidos en normas internacionales como **ASCE 7**, **ASCE 41** y recomendaciones del **PEER Ground Motion Selection**.
+
+---
+
+# Objetivo General
+
+Evaluar registros sísmicos corregidos mediante técnicas de Vertical Data Science para verificar su aptitud en análisis no lineales tiempo-historia y analizar el desempeño sísmico de una estructura de acuerdo con criterios normativos internacionales.
+
+---
+
+# Objetivos Específicos
+
+- Caracterizar registros sísmicos corregidos mediante técnicas de Vertical Data Science.
+- Analizar las propiedades dinámicas de cada acelerograma.
+- Verificar la compatibilidad espectral de los registros conforme a criterios normativos.
+- Seleccionar registros adecuados para análisis no lineal tiempo-historia.
+- Evaluar la respuesta estructural utilizando los registros seleccionados.
+- Analizar el desempeño sísmico de la estructura mediante indicadores de daño.
+
+---
+
+# Flujo de la investigación
+
+```text
+                 Registros Sísmicos Corregidos
+                              │
+                              ▼
+                 Extracción de información
+                              │
+                              ▼
+                  Vertical Data Science (VDS)
+                              │
+      ┌────────────────────────────────────────┐
+      │                                        │
+      │  • Estadística descriptiva             │
+      │  • Visualización                       │
+      │  • Correlaciones                       │
+      │  • Clustering                          │
+      │  • Caracterización de registros        │
+      │                                        │
+      └────────────────────────────────────────┘
+                              │
+                              ▼
+              Evaluación de Compatibilidad Espectral
+                              │
+                              ▼
+            Verificación de criterios normativos
+                              │
+                              ▼
+             Selección de registros sísmicos
+                              │
+                              ▼
+             Análisis No Lineal Tiempo-Historia
+                              │
+                              ▼
+             Evaluación del desempeño estructural
+                              │
+                              ▼
+          Derivas • Daño • Nivel de desempeño
+```
+
+---
+
+# Variables de estudio
+
+## Variable Independiente
+
+**Registros sísmicos corregidos**
+
+Dimensiones:
+
+- Magnitud (Mw)
 - PGA
+- Profundidad
 - Duración significativa
-- Representatividad respecto al espectro objetivo
+- Compatibilidad espectral
+- Características del registro
+- Representatividad del espectro objetivo
 
-**Variable dependiente:** Respuesta sísmica de la estructura
+---
+
+## Variable Dependiente
+
+**Respuesta sísmica de la estructura**
+
+Indicadores:
+
 - Deriva máxima de entrepiso
 - Desplazamiento máximo
 - Cortante basal
-- Nivel de desempeño estructural
-- Estado de daño según Hazus
+- Nivel de desempeño
+- Estado de daño (Hazus / ASCE 41)
 
-## Estructura del repositorio
+---
+
+# 🛠 Tecnologías
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+- Scikit-Learn
+- SciPy
+- Jupyter Notebook
+
+Software de Ingeniería:
+
+- ETABS
+- OpenSees *(opcional)*
+- SAP2000 *(si aplica)*
+
+---
+
+# Estructura del Proyecto
+
 ```
-.
-├── data/
-│   ├── registros_sismicos.csv              # Dataset base (registros de la propuesta)
-│   └── registros_sismicos_procesado.csv    # Generado por el notebook
-├── notebooks/
-│   └── 01_exploracion_registros_sismicos.ipynb
-├── src/                                    # Scripts de procesamiento (próximas etapas)
-├── TRABAJO_FINAL_1__2_.docx                # Documento de la propuesta
+ seismic-vds
+│
+├── data
+│   ├── raw
+│   ├── processed
+│   └── spectra
+│
+├── notebooks
+│
+├── src
+│   ├── preprocessing
+│   ├── spectral_analysis
+│   ├── clustering
+│   ├── visualization
+│   ├── nltha
+│   └── utils
+│
+├── reports
+│
+├── figures
+│
 ├── requirements.txt
+│
 └── README.md
 ```
 
-## Cómo ejecutar
+---
 
-```bash
-python3 -m venv venv
-source venv/bin/activate          # En Windows: venv\Scripts\activate
-pip install -r requirements.txt
+# Fuente de Datos
 
-jupyter notebook notebooks/01_exploracion_registros_sismicos.ipynb
-```
+Los registros acelerográficos utilizados en este proyecto provienen principalmente del:
 
-## Próximos pasos
-- Ampliar la muestra con más registros de CISMID / IGP.
-- Calcular espectros de respuesta y evaluar compatibilidad espectral.
-- Aplicar clustering / reducción de dimensionalidad (Vertical Data Science) para identificar patrones.
-- Seleccionar registros aptos para análisis no lineal tiempo-historia.
-- Exportar registros seleccionados a formato compatible con ETABS / OpenSees.
+**Centro Peruano Japonés de Investigaciones Sísmicas y Mitigación de Desastres (CISMID)**
+
+https://www.cismid.uni.edu.pe/ceois/redacis/red/
+
+En caso de requerirse información complementaria, podrán emplearse registros oficiales del:
+
+- Instituto Geofísico del Perú (IGP)
+
+---
+
+# Metodología
+
+El desarrollo del proyecto contempla las siguientes etapas:
+
+1. Recolección de registros sísmicos corregidos.
+2. Organización y limpieza de la base de datos.
+3. Caracterización mediante Vertical Data Science.
+4. Evaluación de espectros de respuesta.
+5. Verificación del cumplimiento de criterios normativos.
+6. Selección de acelerogramas representativos.
+7. Aplicación en análisis no lineal tiempo-historia.
+8. Evaluación del desempeño estructural.
+
+---
+
+# Normativa y Referencias
+
+- FEMA P-58
+- Norma Técnica Peruana E.030 Diseño Sismorresistente
