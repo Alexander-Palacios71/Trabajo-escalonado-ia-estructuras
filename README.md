@@ -4,14 +4,6 @@
 
 ### Selección y evaluación de registros sísmicos corregidos mediante Vertical Data Science para análisis no lineales tiempo-historia de estructuras ubicadas en la Zona Sísmica 3 del Perú
 
-![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
-![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-</div>
-
----
-
 # 📖 Descripción
 
 Este proyecto desarrolla una metodología basada en **Vertical Data Science (VDS)** para la caracterización, evaluación y selección de registros sísmicos corregidos correspondientes a la **Zona Sísmica 3 del Perú**, con el objetivo de verificar su aptitud para ser utilizados en **Análisis No Lineal Tiempo-Historia (Nonlinear Time History Analysis - NLTHA)**.
