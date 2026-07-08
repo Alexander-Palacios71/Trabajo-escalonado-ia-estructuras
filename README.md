@@ -139,35 +139,19 @@ Software de Ingeniería:
 
 ---
 
-# Estructura del Proyecto
+## Aplicación de los principios de Vertical Data Science (PCS Framework)
 
-```
- seismic-vds
-│
-├── data
-│   ├── raw
-│   ├── processed
-│   └── spectra
-│
-├── notebooks
-│
-├── src
-│   ├── preprocessing
-│   ├── spectral_analysis
-│   ├── clustering
-│   ├── visualization
-│   ├── nltha
-│   └── utils
-│
-├── reports
-│
-├── figures
-│
-├── requirements.txt
-│
-└── README.md
-```
+### Predictibilidad (Predictability)
 
+Los registros sísmicos corregidos contienen variables físicas medibles que permiten caracterizar el movimiento sísmico y seleccionar acelerogramas representativos. Se espera que estas características permitan predecir de manera consistente la respuesta estructural obtenida mediante análisis no lineal tiempo-historia, especialmente en términos de derivas y niveles de desempeño.
+
+### Computabilidad (Computability)
+
+La base de datos de registros sísmicos puede procesarse mediante herramientas computacionales de ciencia de datos, permitiendo realizar análisis estadísticos, verificación de criterios normativos, cálculo de espectros de respuesta, clasificación de registros y su posterior utilización en software de análisis estructural como ETABS, OpenSees o similares.
+
+### Estabilidad (Stability)
+
+Se espera que los patrones identificados y la selección de registros sean consistentes ante pequeñas variaciones en el conjunto de datos o en los parámetros de análisis, siempre que se mantengan los criterios normativos de selección. Asimismo, la metodología busca que la respuesta estructural obtenida sea representativa y reproducible para registros con características sísmicas similares de la Zona Sísmica 3 del Perú.
 ---
 
 # Fuente de Datos
