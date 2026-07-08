@@ -1,38 +1,238 @@
-# Selección y evaluación de registros sísmicos mediante Vertical Data Science
+<div align="center">
 
-Este repositorio contiene el desarrollo de un proyecto de investigación orientado a la evaluación de registros sísmicos corregidos correspondientes a la **Zona Sísmica 3 del Perú**, utilizando técnicas de **Vertical Data Science** para su caracterización, análisis y selección con fines de aplicación en análisis no lineales tiempo-historia (Nonlinear Time History Analysis - NLTHA).
+# 📈 Vertical Data Science for Seismic Ground Motion Selection
 
-El objetivo principal es verificar que los registros acelerográficos cumplan con los criterios técnicos y normativos requeridos para su utilización en análisis dinámicos no lineales. Para ello, se analizarán sus características sísmicas y su compatibilidad espectral, permitiendo identificar aquellos registros que representen adecuadamente la amenaza sísmica de la zona de estudio.
+### Selección y evaluación de registros sísmicos corregidos mediante Vertical Data Science para análisis no lineales tiempo-historia de estructuras ubicadas en la Zona Sísmica 3 del Perú
 
-Una vez seleccionados los registros, estos serán aplicados al análisis no lineal tiempo-historia de una estructura, con el propósito de evaluar su respuesta sísmica mediante indicadores como derivas de entrepiso, desplazamientos y nivel de desempeño estructural de acuerdo con normas internacionales.
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-El proyecto integra herramientas de Ciencia de Datos e Ingeniería Sísmica para desarrollar una metodología reproducible que facilite la selección de acelerogramas y contribuya a mejorar la confiabilidad de las evaluaciones estructurales.
+</div>
 
-## Fuente de datos
+---
 
-Los registros acelerográficos utilizados en este proyecto serán obtenidos del **Centro Peruano Japonés de Investigaciones Sísmicas y Mitigación de Desastres (CISMID)** mediante la Red Acelerográfica del CISMID (REDACIS):
+# 📖 Descripción
 
-https://www.cismid.uni.edu.pe/ceois/redacis/red/
+Este proyecto desarrolla una metodología basada en **Vertical Data Science (VDS)** para la caracterización, evaluación y selección de registros sísmicos corregidos correspondientes a la **Zona Sísmica 3 del Perú**, con el objetivo de verificar su aptitud para ser utilizados en **Análisis No Lineal Tiempo-Historia (Nonlinear Time History Analysis - NLTHA)**.
 
-En caso de ser necesario, la información podrá complementarse con registros oficiales publicados por el Instituto Geofísico del Perú (IGP).
+Posteriormente, los registros seleccionados serán aplicados al análisis dinámico no lineal de una estructura para evaluar su desempeño sísmico mediante indicadores como:
 
-## Estado del proyecto
+- Derivas máximas de entrepiso.
+- Desplazamientos máximos.
+- Cortante basal.
+- Nivel de desempeño estructural.
+- Estado de daño.
 
-Actualmente el proyecto se encuentra en fase de desarrollo e incluye las siguientes actividades:
+La investigación integra herramientas de Ciencia de Datos con criterios de Ingeniería Sísmica establecidos en normas internacionales como **ASCE 7**, **ASCE 41** y recomendaciones del **PEER Ground Motion Selection**.
 
-- Recolección de registros sísmicos.
-- Caracterización y análisis mediante Vertical Data Science.
-- Evaluación de compatibilidad espectral.
-- Selección de registros para análisis no lineal tiempo-historia.
-- Evaluación del desempeño estructural.
+---
 
-## Tecnologías
+# 🎯 Objetivo General
+
+Evaluar registros sísmicos corregidos mediante técnicas de Vertical Data Science para verificar su aptitud en análisis no lineales tiempo-historia y analizar el desempeño sísmico de una estructura de acuerdo con criterios normativos internacionales.
+
+---
+
+# 🔬 Objetivos Específicos
+
+- Caracterizar registros sísmicos corregidos mediante técnicas de Vertical Data Science.
+- Analizar las propiedades dinámicas de cada acelerograma.
+- Verificar la compatibilidad espectral de los registros conforme a criterios normativos.
+- Seleccionar registros adecuados para análisis no lineal tiempo-historia.
+- Evaluar la respuesta estructural utilizando los registros seleccionados.
+- Analizar el desempeño sísmico de la estructura mediante indicadores de daño.
+
+---
+
+# 🏗️ Flujo de la investigación
+
+```text
+                 Registros Sísmicos Corregidos
+                              │
+                              ▼
+                 Extracción de información
+                              │
+                              ▼
+                  Vertical Data Science (VDS)
+                              │
+      ┌────────────────────────────────────────┐
+      │                                        │
+      │  • Estadística descriptiva             │
+      │  • Visualización                       │
+      │  • Correlaciones                       │
+      │  • Clustering                          │
+      │  • Caracterización de registros        │
+      │                                        │
+      └────────────────────────────────────────┘
+                              │
+                              ▼
+              Evaluación de Compatibilidad Espectral
+                              │
+                              ▼
+            Verificación de criterios normativos
+                              │
+                              ▼
+             Selección de registros sísmicos
+                              │
+                              ▼
+             Análisis No Lineal Tiempo-Historia
+                              │
+                              ▼
+             Evaluación del desempeño estructural
+                              │
+                              ▼
+          Derivas • Daño • Nivel de desempeño
+```
+
+---
+
+# 📊 Variables de estudio
+
+## Variable Independiente
+
+**Registros sísmicos corregidos**
+
+Dimensiones:
+
+- Magnitud (Mw)
+- PGA
+- Profundidad
+- Duración significativa
+- Compatibilidad espectral
+- Características del registro
+- Representatividad del espectro objetivo
+
+---
+
+## Variable Dependiente
+
+**Respuesta sísmica de la estructura**
+
+Indicadores:
+
+- Deriva máxima de entrepiso
+- Desplazamiento máximo
+- Cortante basal
+- Nivel de desempeño
+- Estado de daño (Hazus / ASCE 41)
+
+---
+
+# 🛠 Tecnologías
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
+- Plotly
+- Scikit-Learn
 - SciPy
-- Scikit-learn
 - Jupyter Notebook
-- ETABS / OpenSees (Análisis estructural)
+
+Software de Ingeniería:
+
+- ETABS
+- OpenSees *(opcional)*
+- SAP2000 *(si aplica)*
+
+---
+
+# 📂 Estructura del Proyecto
+
+```
+📦 seismic-vds
+│
+├── data
+│   ├── raw
+│   ├── processed
+│   └── spectra
+│
+├── notebooks
+│
+├── src
+│   ├── preprocessing
+│   ├── spectral_analysis
+│   ├── clustering
+│   ├── visualization
+│   ├── nltha
+│   └── utils
+│
+├── reports
+│
+├── figures
+│
+├── requirements.txt
+│
+└── README.md
+```
+
+---
+
+# 📌 Fuente de Datos
+
+Los registros acelerográficos utilizados en este proyecto provienen principalmente del:
+
+**Centro Peruano Japonés de Investigaciones Sísmicas y Mitigación de Desastres (CISMID)**
+
+🔗 https://www.cismid.uni.edu.pe/ceois/redacis/red/
+
+En caso de requerirse información complementaria, podrán emplearse registros oficiales del:
+
+- Instituto Geofísico del Perú (IGP)
+
+---
+
+# 📈 Metodología
+
+El desarrollo del proyecto contempla las siguientes etapas:
+
+1. Recolección de registros sísmicos corregidos.
+2. Organización y limpieza de la base de datos.
+3. Caracterización mediante Vertical Data Science.
+4. Evaluación de espectros de respuesta.
+5. Verificación del cumplimiento de criterios normativos.
+6. Selección de acelerogramas representativos.
+7. Aplicación en análisis no lineal tiempo-historia.
+8. Evaluación del desempeño estructural.
+
+---
+
+# 📚 Normativa y Referencias
+
+- ASCE 7
+- ASCE 41
+- PEER Ground Motion Selection
+- FEMA P-58
+- Norma Técnica Peruana E.030 Diseño Sismorresistente
+
+---
+
+# 🚧 Estado del Proyecto
+
+| Etapa | Estado |
+|--------|:------:|
+| Recolección de datos | ✅ |
+| Organización de datos | 🔄 |
+| Vertical Data Science | ⏳ |
+| Compatibilidad espectral | ⏳ |
+| Selección de registros | ⏳ |
+| NLTHA | ⏳ |
+| Evaluación estructural | ⏳ |
+| Documentación | ⏳ |
+
+---
+
+# 👨‍💻 Autor
+
+**Alexander Ítalo Palacios Rojas**
+
+Proyecto de investigación desarrollado en el marco de la aplicación de técnicas de **Vertical Data Science** a la Ingeniería Sísmica para la selección y evaluación de registros acelerográficos destinados al análisis no lineal tiempo-historia.
+
+---
+
+<div align="center">
+
+**"Transformando datos sísmicos en conocimiento para mejorar la evaluación del desempeño estructural."**
+
+</div>
