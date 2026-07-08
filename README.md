@@ -152,6 +152,7 @@ La base de datos de registros sísmicos puede procesarse mediante herramientas c
 ### Estabilidad (Stability)
 
 Se espera que los patrones identificados y la selección de registros sean consistentes ante pequeñas variaciones en el conjunto de datos o en los parámetros de análisis, siempre que se mantengan los criterios normativos de selección. Asimismo, la metodología busca que la respuesta estructural obtenida sea representativa y reproducible para registros con características sísmicas similares de la Zona Sísmica 3 del Perú.
+
 ---
 
 # Fuente de Datos
