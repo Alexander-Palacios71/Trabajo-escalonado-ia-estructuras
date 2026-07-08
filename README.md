@@ -120,7 +120,7 @@ Indicadores:
 
 ---
 
-# 🛠 Tecnologías
+# Tecnologías
 
 - Python
 - Pandas
