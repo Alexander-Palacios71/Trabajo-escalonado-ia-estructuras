@@ -18,7 +18,7 @@ El propósito principal es transformar grandes volúmenes de datos sísmicos his
 
 ---
 
-## Problemática
+## Problemática:
 
 El Perú se encuentra dentro del Cinturón de Fuego del Pacífico y presenta una elevada actividad sísmica. Aunque instituciones como el IGP y CISMID cuentan con extensas bases de datos de eventos sísmicos, gran parte de esta información permanece subutilizada.
 
