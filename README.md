@@ -24,11 +24,12 @@ El Perú se encuentra dentro del Cinturón de Fuego del Pacífico y presenta una
 
 La selección de registros sísmicos para análisis no lineales suele realizarse mediante criterios limitados, sin aprovechar las relaciones existentes entre variables como:
 
-- Magnitud (Mw)
-- Profundidad
-- PGA
-- Distancia epicentral
-- Localización geográfica
-- Distribución temporal
-- Contenido frecuencial
-- Duración del movimiento
+- Magnitud (Mw).
+- Profundidad.
+- PGA.
+- Distancia epicentral.
+- Localización geográfica.
+- Distribución temporal.
+- Contenido frecuencial.
+- Duración del movimiento.
+
