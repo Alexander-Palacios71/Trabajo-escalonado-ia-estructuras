@@ -1,7 +1,7 @@
 # TF1: Propuesta de Datos - Aplicaciones de IA en Estructuras
 
 ## Título de investigación
-Selección y evaluación de registros sísmicos corregidos mediante Vertical Data Science
+Selección y evaluación de registros sísmicos corregidos mediante Veridical Data Science
 para análisis no lineales tiempo-historia de estructuras ubicadas en la Zona Sísmica 3 del Perú.
 
 ## Integrantes
