@@ -13,21 +13,13 @@ para análisis no lineales tiempo-historia de estructuras ubicadas en la Zona S�
 ## Docente
 Kurt Walter Soncco Sinchi — Julio, 2026
 
-# Descripción
+# Problema de ingeniería estructural
 
-Este proyecto desarrolla una metodología basada en **Vertical Data Science (VDS)** para la caracterización, evaluación y selección de registros sísmicos corregidos correspondientes a la **Zona Sísmica 3 del Perú**, con el objetivo de verificar su aptitud para ser utilizados en **Análisis No Lineal Tiempo-Historia (Nonlinear Time History Analysis - NLTHA)**.
-
-Posteriormente, los registros seleccionados serán aplicados al análisis dinámico no lineal de una estructura para evaluar su desempeño sísmico mediante indicadores como:
-
-- Derivas máximas de entrepiso.
-- Desplazamientos máximos.
-- Cortante basal.
-- Nivel de desempeño estructural.
-- Estado de daño.
-
-La investigación integra herramientas de Ciencia de Datos con criterios de Ingeniería Sísmica establecidos en normas internacionales como **ASCE 7**, **ASCE 41** y recomendaciones del **PEER Ground Motion Selection**.
-
----
+En la ingeniería estructural moderna, el análisis dinámico no lineal Tiempo Historia constituye uno de los procedimientos más rigurosos para evaluar la respuesta sísmica y el desempeño de edificaciones e infraestructura frente a eventos sísmicos severos. La confiabilidad de este tipo de análisis depende, en gran medida, de la calidad de los registros acelerográficos utilizados como excitación sísmica, los cuales deben ser previamente acondicionados mediante procesos de corrección de línea base, filtrado digital y escalamiento espectral para garantizar que representen adecuadamente las características del movimiento del terreno y cumplan con los criterios establecidos por la normativa vigente.
+Actualmente, este acondicionamiento se realiza principalmente mediante software especializados, como SeismoSignal y SeismoMatch, lo que implica un proceso predominantemente manual que requiere descargar los registros desde repositorios sísmicos, verificar su calidad, ejecutar individualmente la corrección de línea base, aplicar filtros digitales, generar los espectros de respuesta, realizar el escalamiento respecto a un espectro objetivo y exportar los resultados para su utilización en programas de análisis estructural. Este procedimiento demanda un tiempo considerable, depende de la experiencia del usuario y aumenta la posibilidad de errores durante la manipulación de la información, especialmente cuando se trabaja con un número elevado de registros sísmicos.
+Adicionalmente, los repositorios de registros acelerográficos, como el administrado por el Centro Peruano Japonés de Investigaciones Sísmicas y Mitigación de Desastres (CISMID), contienen una gran cantidad de información distribuida en múltiples eventos, estaciones acelerográficas y formatos de almacenamiento. La ausencia de herramientas integradas que permitan consultar, filtrar, visualizar y procesar automáticamente esta información dificulta la selección de registros compatibles con las características del análisis estructural y limita la eficiencia de los estudios de respuesta sísmica.
+Como consecuencia, los ingenieros estructurales invierten una parte importante del tiempo de desarrollo de un proyecto en actividades repetitivas de búsqueda, organización y procesamiento de datos, en lugar de concentrarse en la interpretación de los resultados y la evaluación del desempeño estructural. Esta situación representa una limitación tanto para la investigación como para la práctica profesional, especialmente en estudios que requieren procesar múltiples registros sísmicos para cumplir con los procedimientos de análisis dinámico establecidos en normas nacionales e internacionales.
+En este contexto, se plantea desarrollar una plataforma computacional que integre, en un único entorno de trabajo, la consulta automática del repositorio sísmico, la visualización interactiva de los eventos registrados, la selección de registros mediante filtros técnicos, la corrección de línea base, el filtrado digital, el cálculo de espectros de respuesta y el escalamiento espectral, automatizando el flujo completo de acondicionamiento de registros acelerográficos. Con ello se busca mejorar la eficiencia del proceso, reducir la intervención manual, minimizar errores operativos y proporcionar registros procesados con calidad técnica adecuada para su utilización en análisis dinámicos no lineales de estructuras.
 
 # Objetivo General
 
