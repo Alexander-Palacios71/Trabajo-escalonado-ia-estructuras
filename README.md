@@ -2,10 +2,10 @@
 Selección y corrreción de registros sísmicos mediante Veridical Data Science para análisis no lineales tiempo-historia de estructuras del Perú.
 
 ## Integrantes
-- Palacios Rojas Alexander Ítalo
-- Cristobal Villanueva Jhon Franklin
-- Quintana Huayta Gisela Shenna
-- Segura Sanchez José Gustavo
+- Palacios Rojas Alexander Ítalo.
+- Cristobal Villanueva Jhon Franklin.
+- Quintana Huayta Gisela Shenna.
+- Segura Sanchez José Gustavo.
 
 ## Docente
 Kurt Walter Soncco Sinchi — Julio, 2026
