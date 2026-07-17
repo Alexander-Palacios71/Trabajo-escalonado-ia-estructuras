@@ -61,17 +61,15 @@ La información será complementada mediante visualizaciones interactivas desarr
 
 # Plan de algoritmos
 
-El sistema propuesto estará conformado por un conjunto de algoritmos determinísticos orientados al procesamiento digital de señales sísmicas y al análisis numérico, los cuales permitirán automatizar el tratamiento de registros acelerográficos obtenidos del repositorio del CISMID. Debido a que el objetivo del software consiste en acondicionar registros sísmicos para su posterior utilización en análisis dinámicos no lineales, no se requiere el entrenamiento de modelos de aprendizaje automático ni de redes neuronales, ya que el procesamiento se fundamenta en procedimientos físicos y matemáticos ampliamente establecidos en la ingeniería sísmica.
+El sistema propuesto estará conformado por un conjunto de algoritmos determinísticos orientados al procesamiento digital de señales sísmicas y al análisis numérico, los cuales permitirán automatizar el tratamiento de registros acelerográficos obtenidos del repositorio del CISMID. Debido a que el software incorpora técnicas de inteligencia artificial, se implementará un modelo basado en redes neuronales que permitirá procesar de manera automática una cantidad n de registros sísmicos. El modelo realizará el acondicionamiento de los registros mediante la corrección de línea base, el escalamiento al espectro objetivo y la evaluación de sus características dinámicas. Posteriormente, a partir de criterios de similitud y compatibilidad espectral, la red neuronal seleccionará automáticamente los siete registros sísmicos más adecuados para su utilización en análisis dinámicos no lineales, optimizando el proceso de selección y reduciendo la intervención manual del usuario.
 
 ## Adquisición y organización de registros sísmicos
 
 Se implementarán algoritmos para la consulta, extracción y gestión automatizada de la información contenida en el repositorio del CISMID, permitiendo la descarga sistemática de los registros acelerográficos junto con sus respectivos metadatos. Posteriormente, esta información será estructurada y organizada mediante el uso de la biblioteca Pandas, facilitando su almacenamiento, consulta, filtrado y procesamiento automatizado. Este procedimiento optimizará la eficiencia en la gestión de los datos, reducirá los errores asociados al procesamiento manual y garantizará la integridad, consistencia y trazabilidad de la información empleada durante el desarrollo de la investigación.
 
-## Adquisición y organización de registros sísmicos
+## Algoritmos de limpieza y validación de datos
 
 Antes del procesamiento de las señales acelerográficas, se implementarán algoritmos de limpieza y validación de datos con el propósito de verificar la calidad, integridad y consistencia de la información contenida en el repositorio. Estos algoritmos permitirán identificar y corregir posibles anomalías mediante la detección de:
- - Valores nulos.
- - Inconsistencias en el intervalo de muestreo.
  - Errores de formato.
 La aplicación de este proceso garantizará que únicamente se incorporen al análisis registros válidos y consistentes, optimizando la calidad del conjunto de datos, reduciendo la propagación de errores durante las etapas posteriores de procesamiento y fortaleciendo la confiabilidad, reproducibilidad y trazabilidad de los resultados obtenidos.
 
@@ -136,11 +134,9 @@ Donde se tendrá que obtener resultados equivalentes a los proporcionados por so
 
 # Resultado esperado global
 
- - Conectarse automáticamente al repositorio sísmico del CISMID.
  - Visualizar eventos sísmicos mediante mapas interactivos y filtros avanzados.
  - Descargar y organizar registros acelerográficos.
  - Ejecutar corrección de línea base y filtrado digital sin intervención manual.
  - Calcular espectros de respuesta mediante algoritmos numéricos validados.
  - Escalar registros respecto a un espectro objetivo.
  - Exportar automáticamente los registros procesados y sus parámetros asociados.
-
