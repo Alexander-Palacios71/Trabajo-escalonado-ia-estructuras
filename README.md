@@ -1,5 +1,3 @@
-# TF1: Propuesta de Datos - Aplicaciones de IA en Estructuras
-
 ## Título de investigación
 Selección y corrreción de registros sísmicos mediante Veridical Data Science para análisis no lineales tiempo-historia de estructuras del Perú.
 
